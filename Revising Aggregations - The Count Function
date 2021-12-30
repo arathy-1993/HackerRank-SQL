@@ -1,0 +1,1 @@
+select count(name) citycount from City where population > 100000;
