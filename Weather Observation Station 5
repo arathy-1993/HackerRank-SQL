@@ -1,0 +1,6 @@
+Declare @Small int
+Declare @Large int
+select @Small = Min(Len(City)) from Station 
+select @Large = Max(Len(City)) from Station
+select Top 1 City as SmallestCityName,Len(City) as Minimumlength from Station where Len(City) = @Small Order by City Asc
+select Top 1 City as LargestCityName,Len(City) as MaximumLength from Station where Len(City) = @Large Order by City Asc;
