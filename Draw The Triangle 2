@@ -1,0 +1,11 @@
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+declare @variable int
+select @variable=1
+while @variable<=20
+begin
+print replicate('* ',@variable)
+set @variable=@variable+1
+end
